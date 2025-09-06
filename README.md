@@ -1,36 +1,163 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ENVE Yapı Proje Mühendislik - Web Sitesi
 
-## Getting Started
+[![Next.js](https://img.shields.io/badge/Next.js-15.5.2-black)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.0-38B2AC)](https://tailwindcss.com/)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
-First, run the development server:
+ENVE Yapı Proje Mühendislik için geliştirilmiş profesyonel web sitesi. Modern teknolojilerle oluşturulmuş, SEO optimizasyonu yapılmış ve tamamen responsive tasarıma sahip.
+
+## 🌟 Özellikler
+
+- ⚡ **Next.js 15** - En yeni React framework'ü
+- 🎨 **Tailwind CSS** - Utility-first CSS framework
+- 📱 **Responsive Tasarım** - Mobil uyumlu
+- 🔍 **SEO Optimizasyonu** - Arama motoru dostu
+- 🚀 **Performans Odaklı** - Hızlı yükleme
+- 🌐 **Çok Dilli Destek** - Türkçe odaklı
+- 📊 **Analytics Hazır** - Google Analytics entegrasyonu
+
+## 📋 Sayfalar
+
+- 🏠 **Ana Sayfa** - Şirket tanıtımı ve öne çıkan hizmetler
+- 👥 **Hakkımızda** - Şirket geçmişi ve değerler
+- 🛠️ **Hizmetlerimiz** - Sunduğumuz mühendislik hizmetleri
+- 📁 **Projelerimiz** - Tamamlanan ve devam eden projeler
+- 👨‍💼 **Ekibimiz** - Uzman mühendis kadromuz
+- 🤝 **Referanslar** - Müşteri referansları
+- 📞 **Bize Ulaşın** - İletişim bilgileri ve formu
+
+## 🛠️ Teknoloji Stack
+
+- **Frontend Framework**: Next.js 15 (App Router)
+- **Styling**: Tailwind CSS
+- **Language**: TypeScript
+- **Font**: Work Sans & Noto Sans
+- **Icons**: Material Symbols
+- **Deployment**: Vercel (önerilen)
+
+## 🚀 Kurulum ve Çalıştırma
+
+### Gereksinimler
+
+- Node.js 18+
+- npm veya yarn
+
+### Kurulum
 
 ```bash
+# Repository'yi klonlayın
+git clone https://github.com/basriayaz/enve-website.git
+cd enve-website
+
+# Bağımlılıkları yükleyin
+npm install
+
+# Geliştirme sunucusunu başlatın
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Tarayıcınızda [http://localhost:3000](http://localhost:3000) adresini açın.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# Production build oluşturun
+npm run build
 
-## Learn More
+# Build'i test edin
+npm start
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 📁 Proje Yapısı
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+enve-website/
+├── public/                 # Statik dosyalar
+│   ├── favicon-*.png      # Favicon dosyaları
+│   ├── logo.png           # Şirket logosu
+│   ├── manifest.json      # PWA manifest
+│   └── robots.txt         # Arama motoru yönergeleri
+├── src/
+│   ├── app/               # Next.js App Router
+│   │   ├── layout.tsx     # Ana layout
+│   │   ├── page.tsx       # Ana sayfa
+│   │   ├── globals.css    # Global stiller
+│   │   └── sitemap.ts     # Dinamik sitemap
+│   └── components/        # React bileşenleri
+│       ├── Header.tsx     # Üst navigasyon
+│       ├── Footer.tsx     # Alt kısım
+│       └── WhatsAppPopup.tsx # WhatsApp widget
+└── next.config.ts         # Next.js konfigürasyonu
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🔧 Yapılandırma
 
-## Deploy on Vercel
+### Environment Variables
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Proje için aşağıdaki environment variable'ları ayarlayabilirsiniz:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```env
+# Google Analytics (opsiyonel)
+GA_MEASUREMENT_ID=GA-XXXXXXXXXX
+
+# WhatsApp Numarası
+WHATSAPP_NUMBER=+905321234567
+```
+
+### SEO Ayarları
+
+SEO ayarları `src/app/layout.tsx` dosyasında yapılandırılmıştır:
+- Meta verileri
+- Open Graph etiketleri
+- Twitter Card'lar
+- Structured Data (JSON-LD)
+
+## 📊 SEO & Performans
+
+- ✅ **Robots.txt** - Arama motoru erişim kontrolü
+- ✅ **Sitemap.xml** - Otomatik site haritası
+- ✅ **Meta Tags** - Kapsamlı meta verileri
+- ✅ **Open Graph** - Sosyal medya paylaşımı
+- ✅ **Twitter Cards** - Twitter optimizasyonu
+- ✅ **Structured Data** - Google Rich Snippets
+- ✅ **Core Web Vitals** - Performans optimizasyonu
+
+## 🎨 Tasarım Özellikleri
+
+- **Modern UI/UX** - Kullanıcı dostu arayüz
+- **Responsive Design** - Tüm cihazlarda mükemmel görünüm
+- **Smooth Animations** - Akıcı geçişler
+- **Accessibility** - Erişilebilirlik standartları
+- **Dark Mode Ready** - Karanlık tema desteği
+
+## 📞 İletişim
+
+**ENVE Yapı Proje Mühendislik**
+- Website: [enveproje.com](https://enveproje.com)
+- Email: info@enveproje.com
+- Phone: +90 216 123 45 67
+- Address: İstanbul, Türkiye
+
+## 📝 Lisans
+
+Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasına bakın.
+
+## 🤝 Katkıda Bulunma
+
+1. Fork yapın
+2. Feature branch oluşturun (`git checkout -b feature/amazing-feature`)
+3. Commit yapın (`git commit -m 'Add amazing feature'`)
+4. Push yapın (`git push origin feature/amazing-feature`)
+5. Pull Request oluşturun
+
+## 🙏 Teşekkürler
+
+- [Next.js](https://nextjs.org/) - React framework
+- [Tailwind CSS](https://tailwindcss.com/) - CSS framework
+- [Vercel](https://vercel.com/) - Deployment platform
+- [Google Fonts](https://fonts.google.com/) - Font library
+
+---
+
+⭐ Bu projeyi beğendiyseniz yıldız vermeyi unutmayın!
