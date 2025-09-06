@@ -48,7 +48,6 @@ const nextConfig: NextConfig = {
 
   // Experimental özellikler
   experimental: {
-    optimizeCss: true,
     webVitalsAttribution: ['CLS', 'LCP'],
   },
 };

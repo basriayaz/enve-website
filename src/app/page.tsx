@@ -1,42 +1,6 @@
-import Link from 'next/link';
-import { Metadata } from 'next'
-
-export const metadata: Metadata = {
-  title: "Ana Sayfa",
-  description: "ENVE Yapı Proje Mühendislik - İstanbul'un lider mühendislik firması. Yapı, geoteknik, elektrik ve mekanik projelerde uzman çözümler sunuyoruz.",
-  keywords: [
-    "mühendislik firması İstanbul",
-    "yapı mühendisliği",
-    "geoteknik mühendislik",
-    "elektrik projeleri",
-    "mekanik projeler",
-    "akustik rapor",
-    "EKB raporu",
-    "yapı denetim",
-    "proje danışmanlığı",
-    "mühendislik danışmanlığı"
-  ],
-  openGraph: {
-    title: "ENVE Yapı Proje Mühendislik - İstanbul'un Lider Mühendislik Firması",
-    description: "İstanbul merkezli uzman mühendislik ekibi ile yapı, geoteknik, elektrik ve mekanik projelerde güvenilir çözümler sunuyoruz.",
-    images: [
-      {
-        url: "/logo.png",
-        width: 1200,
-        height: 630,
-        alt: "ENVE Yapı Proje Mühendislik Ana Sayfa",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "ENVE Yapı Proje Mühendislik - İstanbul'un Lider Mühendislik Firması",
-    description: "İstanbul merkezli uzman mühendislik ekibi ile yapı, geoteknik, elektrik ve mekanik projelerde güvenilir çözümler sunuyoruz.",
-    images: ["/logo.png"],
-  },
-}
-
 'use client';
+
+import Link from 'next/link';
 
 export default function Home() {
   const handleWhatsAppClick = () => {
