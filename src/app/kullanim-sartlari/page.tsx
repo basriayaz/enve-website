@@ -132,8 +132,8 @@ export default function KullanimSartlari() {
             <div className="bg-gray-50 p-4 rounded-lg">
               <p className="text-gray-700"><strong>ENVE Yapı Proje Mühendislik</strong></p>
               <p className="text-gray-700">İstanbul, Türkiye</p>
-              <p className="text-gray-700">E-posta: info@enveproje.com</p>
-              <p className="text-gray-700">Telefon: +90 216 123 45 67</p>
+              <p className="text-gray-700">Telefon: +90 539 922 76 67</p>
+              <p className="text-gray-700">E-posta: enveyapi@gmail.com</p>
             </div>
           </section>
 

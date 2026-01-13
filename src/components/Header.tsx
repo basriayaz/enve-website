@@ -28,7 +28,7 @@ export default function Header() {
   };
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = '+905321234567'; // Buraya gerçek telefon numarası gelecek
+    const phoneNumber = '+905399227667'; // Enes Yangın
     const message = 'Merhaba, ENVE Yapı Proje hakkında teklif almak istiyorum.';
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
@@ -36,14 +36,14 @@ export default function Header() {
 
   return (
     <>
-      <header className="flex items-center justify-between whitespace-nowrap px-4 sm:px-6 lg:px-10 py-4 shadow-sm relative z-50 bg-white">
+      <header className="flex items-center justify-between whitespace-nowrap px-4 sm:px-6 lg:px-10 py-2 shadow-sm relative z-50 bg-white">
         <Link href="/" className="flex items-center text-slate-800 hover:opacity-80 transition-opacity">
           <Image
             src="/logo.png"
             alt="ENVE Yapı Proje Logo"
-            width={48}
-            height={48}
-            className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
+            width={72}
+            height={72}
+            className="w-16 h-16 sm:w-[72px] sm:h-[72px] object-contain"
           />
         </Link>
 
@@ -112,9 +112,9 @@ export default function Header() {
               <Image
                 src="/logo.png"
                 alt="ENVE Yapı Proje Logo"
-                width={32}
-                height={32}
-                className="w-8 h-8 object-contain"
+                width={48}
+                height={48}
+                className="w-12 h-12 object-contain"
               />
               <span className="text-lg font-bold text-slate-800">ENVE Yapı</span>
             </div>

@@ -13,11 +13,11 @@ export const structuredData: Metadata = {
         '@type': 'PostalAddress',
         'addressCountry': 'TR',
         'addressRegion': 'İstanbul',
-        'addressLocality': 'İstanbul'
+        'addressLocality': 'Beylikdüzü'
       },
       'contactPoint': {
         '@type': 'ContactPoint',
-        'telephone': '+90-216-123-45-67',
+        'telephone': '+90-539-922-76-67',
         'contactType': 'customer service',
         'availableLanguage': 'Turkish'
       },

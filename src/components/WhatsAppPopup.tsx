@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 export default function WhatsAppPopup() {
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = '+905321234567'; // Buraya gerçek telefon numarası gelecek
+    const phoneNumber = '+905399227667'; // Enes Yangın
     const message = 'Merhaba, ENVE Yapı Proje hakkında bilgi almak istiyorum.';
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');

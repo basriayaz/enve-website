@@ -1,119 +1,40 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function Projelerimiz() {
   const [activeFilter, setActiveFilter] = useState('Tümü');
 
   const projects = [
-    {
-      id: 1,
-      title: 'Konut Kompleksi',
-      description: 'Konfor ve sürdürülebilirlik için tasarlanmış modern bir konut kompleksi.',
-      image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCCTa_BGqsKV6N8BSnYBH-SWPOEOl6taG0bniP4DIQNxUuqxmOvZHNVEhknBXcPJw_7NscytUlwHEXQcPjNUKfDAVpIRMB8__Py9GWIPUenF8Yxax4bO9wWoySdcish1QZwnYwHhk7wbuuBKn7wDEv2JHvfw5zT-B1OjadJsVwcVFbSlZdwH_L6uZ2pf4dRcrQDdCHrEeb7CnwVZmlMM4-wgn0wwklLl2AyoEGevdeLWo87hG-4k3vv71X5CQtU876nnyeIV2Aq-go',
-      category: 'Tamamlanan',
-      status: 'completed',
-      year: '2023'
-    },
-    {
-      id: 2,
-      title: 'Ticari Bina',
-      description: 'Yenilikçi tasarımla öne çıkan, modern bir ticari bina.',
-      image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDO_jcxc5nMPv3pxIRfbXoTq8L2xhQTGj7p5D42P5PplhchYwN9khj2AkZotkVi8UQtfIFdo4OlGaG7YLUyQq1_H_kK9upAQ09gVr4mBC9I7CrcbtaM8sZnZyPLhNUT0Q3OBN8gMDPaiV99i_6s5bZOefbL68SvZ4u6Ok8LkCLYkzCnGGDXIae66yGmW3aUb4cxnMAFBTNduV9gIN5YSYZ7KFwCfxnEYXt_ctS2wGoJNFcudglQZwNd-flR1ZkM-idlgi7x8nIUIgk',
-      category: 'Tamamlanan',
-      status: 'completed',
-      year: '2023'
-    },
-    {
-      id: 3,
-      title: 'Altyapı Projesi',
-      description: 'Topluluk bağlantısını geliştiren önemli bir altyapı projesi.',
-      image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCWJ2xJN5Ge2tOBjzqqj9VuL9OqmgbObhB7rbt0efklEXDcYBiTc2-lw9xhicK6s7kM4k0CLvYNVgy4jIllRClsRfsrF450u3___1Hnr3dape5UAun2JXMbVOJFz7Kvw4TblKIVgBzgrR4fmzqJVBzzQpuFPnPcV2PcF8UgNi-gyXjR_fuIPaZKP45ucy16ICIgWbN0_9h7YPVtOLS38EygsuDXKVmGSIF4YAICZ1Sht4rWklttEisYA8ZDnTumMGNYqGBb7xv0Cx4',
-      category: 'Devam Eden',
-      status: 'ongoing',
-      year: '2024'
-    },
-    {
-      id: 4,
-      title: 'Yenileme Projesi',
-      description: 'Mevcut bir yapıyı canlandıran yenileme projesi.',
-      image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDpE_D_ykODR6_wUkApF08Uys6A6ELKCvOPBfIqNvvImdnwmq5Ibc478ELLTwIUyzhaPUJi_SqdT8_CyZD98Bx3TUMWU9Oh9foDC73b0_L-QOvtOsq3nTa9MGIHmdoP4e9_PFTOsDIwmNcD1pirIyeV5Uj1j4iDTdAMhhyfwJ7-LjXjjeiOpBHm1uqqNtSGwP7Wwz1i0tIFBcK9ir9gnHqH0v4oaqVaRQsQ5PKHBqUR9RnUeRTMYQJSA9Trds9EJnnAAaDRP4ZpGOQ',
-      category: 'Tamamlanan',
-      status: 'completed',
-      year: '2022'
-    },
-    {
-      id: 5,
-      title: 'Kentsel Gelişim',
-      description: 'Büyüyen bir şehir için kapsamlı kentsel gelişim planı.',
-      image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD5M-6dyzyBfMyrMG0Cp2Lp00qncPhcRJifWyjq9yLC2A6YQWJwFzoYZYKLC9pyzkMWLyKvKTFvxxQueRJFPCccJ6QiYQEInp99UmGC5CKxZOBRJNKnEpeNE4yPyokHleU_x-6nCWI2v73Tkc4mW9qydSE_itJBRK2Feh03mx9AX28tDP8FW2g586rK8NDjL2oZc5wgWKEp4l7LxugPPi3GDdJPHF91QRvZ1ocoJgCBFGrHXzR-cEK5i36HUMEYnINfDmVdw1kVEko',
-      category: 'Gelecek',
-      status: 'planned',
-      year: '2025'
-    },
-    {
-      id: 6,
-      title: 'Sürdürülebilir Tasarım',
-      description: 'Çevre dostu ve sürdürülebilir bina uygulamalarına odaklanan bir proje.',
-      image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDM2duw__UHaIimFeOF0JYF2PISSFvkxmL0S-jzFtYjh5S7uOxG4nfP92DhmAgyzFCNxFkvoLWVSv07oEuHJHjb5-mu5W0P5JLTfzuzyedfBU6iwviVpVkQCYWN2BpnfKy2hLOAP2YA0WAUG2ded1R4k228Grqkcni112GGhB1REGguw8N7ScXa90t0eHeR4Eqz4zPoC8axsNbWAYKyl1ISQGiDrNhMnWkvJvLaOet93CpljQCOHRmY1ndkXHF7AGO9pkF1G0DhKtk',
-      category: 'Devam Eden',
-      status: 'ongoing',
-      year: '2024'
-    },
-    {
-      id: 7,
-      title: 'Köprü İnşaatı',
-      description: 'Modern mühendislik teknikleriyle inşa edilen güvenli ve dayanıklı bir köprü projesi.',
-      image: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&h=600&fit=crop',
-      category: 'Tamamlanan',
-      status: 'completed',
-      year: '2023'
-    },
-    {
-      id: 8,
-      title: 'Endüstriyel Tesis',
-      description: 'Üretim verimliliğini artırmak için tasarlanmış kapsamlı endüstriyel tesis kompleksi.',
-      image: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop',
-      category: 'Devam Eden',
-      status: 'ongoing',
-      year: '2024'
-    },
-    {
-      id: 9,
-      title: 'Akıllı Şehir Planlaması',
-      description: 'Geleceğin şehir yaşamını şekillendirecek akıllı teknoloji entegrasyonu ile kent planlaması.',
-      image: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&h=600&fit=crop',
-      category: 'Gelecek',
-      status: 'planned',
-      year: '2025'
-    },
-    {
-      id: 10,
-      title: 'Enerji Verimli Sistemler',
-      description: 'Güneş enerjisi ve akıllı otomasyon sistemleriyle enerji tasarrufu sağlayan kompleks.',
-      image: 'https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=800&h=600&fit=crop',
-      category: 'Tamamlanan',
-      status: 'completed',
-      year: '2022'
-    },
-    {
-      id: 11,
-      title: 'Deprem Dayanıklı Yapılar',
-      description: 'Son deprem mühendisliği standartlarına uygun, güvenilir konut projesi.',
-      image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=600&fit=crop',
-      category: 'Devam Eden',
-      status: 'ongoing',
-      year: '2024'
-    },
-    {
-      id: 12,
-      title: 'Yeşil Bina Sertifikası',
-      description: 'LEED standartlarında çevre dostu ve sürdürülebilir yeşil bina projesi.',
-      image: 'https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&h=600&fit=crop',
-      category: 'Gelecek',
-      status: 'planned',
-      year: '2026'
-    }
+    { id: 1, title: 'Lotus Meydan', image: '/images/projeler/lotus-meydan.webp', category: 'Tamamlanan', status: 'completed' },
+    { id: 2, title: 'Lotus KORU', image: '/images/projeler/lotus-koru.webp', category: 'Tamamlanan', status: 'completed' },
+    { id: 3, title: 'Nefes Atakent', image: '/images/projeler/nefes-atakent.webp', category: 'Tamamlanan', status: 'completed' },
+    { id: 4, title: 'Brand Atakent 2', image: '/images/projeler/brand-atakent-2.webp', category: 'Tamamlanan', status: 'completed' },
+    { id: 5, title: 'Brand Atakent 1', image: '/images/projeler/brand-atakent-1.webp', category: 'Tamamlanan', status: 'completed' },
+    { id: 6, title: 'Panorama Büyükçekmece', image: '/images/projeler/panorama-buyukcekmece.jpg', category: 'Tamamlanan', status: 'completed' },
+    { id: 7, title: 'Kağıthane Gül Yapı', image: '/images/projeler/kagithane-gul-yapi.webp', category: 'Tamamlanan', status: 'completed' },
+    { id: 8, title: 'İsmail Altun', image: '/images/projeler/ismail-altun.webp', category: 'Tamamlanan', status: 'completed' },
+    { id: 9, title: 'Alya Trio', image: '/images/projeler/alya-trio.webp', category: 'Tamamlanan', status: 'completed' },
+    { id: 10, title: 'Batıköy Konut', image: '/images/projeler/batikoy-konut.webp', category: 'Tamamlanan', status: 'completed' },
+    { id: 11, title: 'Hüseyin Öztürk Fabrika', image: '/images/projeler/huseyin-ozturk-fabrika.webp', category: 'Tamamlanan', status: 'completed' },
+    { id: 12, title: 'Marmara Konakları', image: '/images/projeler/marmara-konaklari.webp', category: 'Tamamlanan', status: 'completed' },
+    { id: 13, title: 'Modern Eğitim Koleji', image: '/images/projeler/modern-egitim-koleji.webp', category: 'Tamamlanan', status: 'completed' },
+    { id: 14, title: 'Sahil Konakları', image: '/images/projeler/sahil-konaklari.webp', category: 'Tamamlanan', status: 'completed' },
+    { id: 15, title: 'Tesa', image: '/images/projeler/tesa.webp', category: 'Tamamlanan', status: 'completed' },
+    { id: 16, title: 'Hadımköy Cami', image: '/images/projeler/hadimkoy-cami.webp', category: 'Tamamlanan', status: 'completed' },
+    { id: 17, title: 'Avcılar Otel', image: '/images/projeler/avcilar-otel.webp', category: 'Tamamlanan', status: 'completed' },
+    { id: 18, title: 'Kuğulu Park', image: '/images/projeler/kugulu-park.webp', category: 'Tamamlanan', status: 'completed' },
+    { id: 19, title: 'Alya Onist', image: '/images/projeler/alya-onist.webp', category: 'Tamamlanan', status: 'completed' },
+    { id: 20, title: 'Zigana AVM', image: '/images/projeler/zigana-avm.webp', category: 'Tamamlanan', status: 'completed' },
+    { id: 21, title: 'Beyoğlu Konut', image: '/images/projeler/beyoglu-konut.webp', category: 'Tamamlanan', status: 'completed' },
+    { id: 22, title: 'Engin Grup', image: '/images/projeler/engin-grup.webp', category: 'Tamamlanan', status: 'completed' },
+    { id: 23, title: 'Bomonti Otel', image: '/images/projeler/bomonti-otel.webp', category: 'Tamamlanan', status: 'completed' },
+    { id: 24, title: 'İmamoğlu İnşaat', image: '/images/projeler/imamoglu-insaat.webp', category: 'Tamamlanan', status: 'completed' },
+    { id: 25, title: 'Palm Marin', image: '/images/projeler/palm-marin.webp', category: 'Tamamlanan', status: 'completed' },
+    { id: 26, title: 'Pagev', image: '/images/projeler/pagev.webp', category: 'Tamamlanan', status: 'completed' },
+    { id: 27, title: 'Oto Galeri', image: '/images/projeler/oto-galeri.webp', category: 'Tamamlanan', status: 'completed' },
+    { id: 28, title: 'Mabeyn Sahil', image: '/images/projeler/mabeyn-sahil.webp', category: 'Tamamlanan', status: 'completed' },
   ];
 
   const filteredProjects = activeFilter === 'Tümü'
@@ -199,28 +120,25 @@ export default function Projelerimiz() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {filteredProjects.map((project) => (
           <div key={project.id} className="group flex flex-col bg-white rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden">
-            <div className="relative">
-              <div
-                className="w-full bg-center bg-no-repeat aspect-video bg-cover"
-                style={{ backgroundImage: `url("${project.image}")` }}
-              ></div>
-              <div className="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-0 transition-opacity duration-300"></div>
-              <div className="absolute top-4 left-4">
+            <div className="relative aspect-video overflow-hidden">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-full object-cover"
+                onError={(e) => {
+                  console.log('Image failed to load:', project.image);
+                  e.currentTarget.style.display = 'none';
+                }}
+              />
+                            <div className="absolute top-4 left-4">
                 <span className={`px-3 py-1 text-xs font-medium rounded-full ${getStatusColor(project.status)}`}>
                   {getStatusText(project.status)}
                 </span>
               </div>
-              <div className="absolute top-4 right-4">
-                <span className="px-3 py-1 text-xs font-medium rounded-full bg-black bg-opacity-75 text-white">
-                  {project.year}
-                </span>
-              </div>
             </div>
             <div className="p-6 flex-1 flex flex-col">
-              <div className="flex justify-between items-start mb-2">
-                <h3 className="text-xl font-semibold text-gray-800">{project.title}</h3>
-              </div>
-              <p className="text-gray-600 mt-2 flex-1">{project.description}</p>
+              <h3 className="text-xl font-semibold text-gray-800">{project.title}</h3>
             </div>
           </div>
         ))}

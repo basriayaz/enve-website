@@ -26,8 +26,8 @@ export default function BizeUlasin() {
                   </div>
                   <div>
                     <h3 className="text-slate-900 font-semibold mb-1">Telefon</h3>
-                    <p className="text-slate-600">+90 532 123 45 67</p>
-                    <p className="text-slate-600">+90 216 123 45 67</p>
+                    <p className="text-slate-600">+90 539 922 76 67 (Enes Yangın)</p>
+                    <p className="text-slate-600">+90 530 588 49 00 (Vedat Yıldız)</p>
                   </div>
                 </div>
 
@@ -37,8 +37,7 @@ export default function BizeUlasin() {
                   </div>
                   <div>
                     <h3 className="text-slate-900 font-semibold mb-1">E-posta</h3>
-                    <p className="text-slate-600">info@enve.com.tr</p>
-                    <p className="text-slate-600">teklif@enve.com.tr</p>
+                    <p className="text-slate-600">enveyapi@gmail.com</p>
                   </div>
                 </div>
 
@@ -49,8 +48,7 @@ export default function BizeUlasin() {
                   <div>
                     <h3 className="text-slate-900 font-semibold mb-1">Adres</h3>
                     <p className="text-slate-600">
-                      Bağdat Caddesi No:123<br />
-                      Kadıköy, İstanbul 34740<br />
+                      Beylikdüzü, İstanbul<br />
                       Türkiye
                     </p>
                   </div>
@@ -77,7 +75,7 @@ export default function BizeUlasin() {
               <h3 className="text-slate-900 text-xl font-bold mb-4">Hızlı İletişim</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <a
-                  href="https://wa.me/905321234567?text=Merhaba%2C%20ENVE%20Yap%C4%B1%20Proje%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum"
+                  href="https://wa.me/905399227667?text=Merhaba%2C%20ENVE%20Yap%C4%B1%20Proje%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 p-4 bg-green-50 border border-green-200 rounded-lg hover:bg-green-100 transition-colors"
@@ -90,7 +88,7 @@ export default function BizeUlasin() {
                 </a>
 
                 <a
-                  href="tel:+905321234567"
+                  href="tel:+905399227667"
                   className="flex items-center gap-3 p-4 bg-blue-50 border border-blue-200 rounded-lg hover:bg-blue-100 transition-colors"
                 >
                   <span className="material-symbols-outlined text-2xl text-blue-600">call</span>
@@ -228,11 +226,11 @@ export default function BizeUlasin() {
 
           <div className="mt-8 text-center">
             <p className="text-slate-600 mb-4">
-              Bağdat Caddesi No:123, Kadıköy, İstanbul
+              Beylikdüzü, İstanbul
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://maps.google.com/?q=Bağdat+Caddesi+No:123+Kadıköy+İstanbul"
+                href="https://maps.google.com/?q=Beylikdüzü+İstanbul"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-[#9bbc5d] text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-colors"
@@ -241,7 +239,7 @@ export default function BizeUlasin() {
                 Yol Tarifi Al
               </a>
               <a
-                href="tel:+905321234567"
+                href="tel:+905399227667"
                 className="inline-flex items-center gap-2 bg-slate-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-colors"
               >
                 <span className="material-symbols-outlined">call</span>

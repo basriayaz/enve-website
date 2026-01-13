@@ -79,10 +79,10 @@ export default function Hakkimizda() {
                   E
                 </div>
                 <div className="text-center sm:text-left">
-                  <h3 className="text-slate-900 text-lg sm:text-xl font-bold mb-2">Enes Baş</h3>
-                  <p className="text-[#9bbc5d] font-semibold mb-2">Kurucu Ortak & İnşaat Mühendisi</p>
+                  <h3 className="text-slate-900 text-lg sm:text-xl font-bold mb-2">Yük. İnş. Müh. Enes Yangın</h3>
+                  <p className="text-[#9bbc5d] font-semibold mb-2">Geoteknik Uzmanı</p>
                   <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-                    10+ yıllık inşaat mühendisliği deneyimiyle projelerin teknik koordinasyonundan sorumludur.
+                    Geoteknik mühendisliğinde kapsamlı bilgiyle, en karmaşık temel ve zemin mekaniği projelerimizde liderlik yapıyor, kararlılık ve güvenliği temelden sağlıyor.
                   </p>
                 </div>
               </div>
@@ -94,10 +94,10 @@ export default function Hakkimizda() {
                   V
                 </div>
                 <div className="text-center sm:text-left">
-                  <h3 className="text-slate-900 text-lg sm:text-xl font-bold mb-2">Vedat Baş</h3>
-                  <p className="text-blue-600 font-semibold mb-2">Kurucu Ortak & Mimar</p>
+                  <h3 className="text-slate-900 text-lg sm:text-xl font-bold mb-2">İnş. Müh. Vedat Yıldız</h3>
+                  <p className="text-blue-600 font-semibold mb-2">Yapısal Projeler Uzmanı</p>
                   <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-                    Modern tasarım anlayışıyla estetik ve fonksiyonelliği bir araya getiren mimari çözümler üretir.
+                    Yapısal projelerde sahada ve ofiste geniş deneyimle, proje yürütmeyi ustalıkla yönetiyor ve her detayın tasarım ile uyumlu olmasını sağlıyor.
                   </p>
                 </div>
               </div>
@@ -110,7 +110,7 @@ export default function Hakkimizda() {
           <h2 className="text-slate-900 text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight tracking-tight text-center mb-8 sm:mb-12 lg:mb-16">
             Çalışma Sürecimiz
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
             <div className="text-center">
               <div className="w-16 h-16 sm:w-20 sm:h-20 bg-[#9bbc5d] rounded-full flex items-center justify-center text-white text-xl sm:text-2xl font-bold mx-auto mb-4">
                 1
@@ -140,43 +140,9 @@ export default function Hakkimizda() {
                 Profesyonel ekibimizle projenizi hayata geçiririz.
               </p>
             </div>
-
-            <div className="text-center">
-              <div className="w-16 h-16 sm:w-20 sm:h-20 bg-[#9bbc5d] rounded-full flex items-center justify-center text-white text-xl sm:text-2xl font-bold mx-auto mb-4">
-                4
-              </div>
-              <h3 className="text-slate-900 text-lg sm:text-xl font-bold mb-2">Teslim & Destek</h3>
-              <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-                Projenizi teslim eder ve sürekli destek sağlarız.
-              </p>
-            </div>
           </div>
         </div>
 
-        {/* Stats Section */}
-        <div className="bg-gradient-to-r from-[#9bbc5d]/10 to-blue-50 p-6 sm:p-8 lg:p-12 rounded-3xl">
-          <h2 className="text-slate-900 text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight tracking-tight text-center mb-8 sm:mb-12">
-            Rakamlarla ENVE
-          </h2>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-            <div className="text-center">
-              <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#9bbc5d] mb-2">150+</div>
-              <p className="text-slate-600 text-sm sm:text-base font-medium">Tamamlanan Proje</p>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#9bbc5d] mb-2">12+</div>
-              <p className="text-slate-600 text-sm sm:text-base font-medium">Yıl Deneyim</p>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#9bbc5d] mb-2">500+</div>
-              <p className="text-slate-600 text-sm sm:text-base font-medium">Mutlu Müşteri</p>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#9bbc5d] mb-2">24/7</div>
-              <p className="text-slate-600 text-sm sm:text-base font-medium">Teknik Destek</p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );
