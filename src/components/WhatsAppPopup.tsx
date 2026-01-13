@@ -1,36 +1,17 @@
-'use client';
-
-import { useState, useEffect } from 'react';
 import { FaWhatsapp } from 'react-icons/fa';
-import { motion, AnimatePresence } from 'framer-motion';
 
 export default function WhatsAppPopup() {
-
-  const handleWhatsAppClick = () => {
-    const phoneNumber = '+905399227667'; // Enes Yangın
-    const message = 'Merhaba, ENVE Yapı Proje hakkında bilgi almak istiyorum.';
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
-  };
-
   return (
-    <>
-      {/* Floating WhatsApp Button */}
-      <motion.div
-        className="fixed bottom-6 right-6 z-50"
-        initial={{ scale: 0 }}
-        animate={{ scale: 1 }}
-        transition={{ type: "spring", stiffness: 260, damping: 20 }}
+    <div className="fixed bottom-6 right-6 z-50 animate-bounce-in">
+      <a
+        href="https://wa.me/905399227667?text=Merhaba%2C%20ENVE%20Yap%C4%B1%20Proje%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110 active:scale-95 flex items-center justify-center"
+        aria-label="WhatsApp ile iletişime geç"
       >
-        <motion.button
-          onClick={handleWhatsAppClick}
-          className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-colors duration-300 relative"
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-        >
-          <FaWhatsapp size={28} />
-        </motion.button>
-      </motion.div>
-    </>
+        <FaWhatsapp size={28} />
+      </a>
+    </div>
   );
 }

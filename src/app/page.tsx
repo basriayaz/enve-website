@@ -1,18 +1,10 @@
-'use client';
-
 import Link from 'next/link';
 
 export default function Home() {
-  const handleWhatsAppClick = () => {
-    const phoneNumber = '+905399227667'; // Enes Yangın
-    const message = 'Merhaba, ENVE Yapı Proje hakkında bilgi almak istiyorum.';
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
-  };
   return (
     <>
       {/* Hero Section */}
-      <section className="relative min-h-[60vh] sm:min-h-[70vh] md:min-h-[80vh] lg:min-h-[90vh] bg-cover bg-center flex items-center animate-fade-in" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80")' }}>
+      <section className="relative min-h-[60vh] sm:min-h-[70vh] md:min-h-[80vh] lg:min-h-[90vh] bg-cover bg-center flex items-center animate-fade-in" style={{ backgroundImage: 'url("/images/hero-bg.webp")' }}>
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center text-white max-w-4xl mx-auto">
@@ -29,12 +21,14 @@ export default function Home() {
               >
                 <span>Hizmetlerimizi Keşfet</span>
               </Link>
-              <button
-                onClick={handleWhatsAppClick}
-                className="w-full sm:w-auto flex min-w-[140px] sm:min-w-[160px] cursor-pointer items-center justify-center overflow-hidden rounded-md h-10 sm:h-12 px-4 sm:px-6 border-2 border-white text-white text-sm sm:text-base font-bold hover:bg-white hover:text-slate-800 transition-all hover:scale-105 active:scale-95"
+              <a
+                href="https://wa.me/905399227667?text=Merhaba%2C%20ENVE%20Yap%C4%B1%20Proje%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto flex min-w-[140px] sm:min-w-[160px] cursor-pointer items-center justify-center overflow-hidden rounded-md h-10 sm:h-12 px-4 sm:px-6 border-2 border-white text-white text-sm sm:text-base font-bold hover:bg-white hover:text-slate-800 transition-all hover:scale-105 active:scale-95 no-underline"
               >
                 <span>İletişime Geç</span>
-              </button>
+              </a>
             </div>
           </div>
         </div>

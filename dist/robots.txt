@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+# Ana sayfalar
+Allow: /
+Allow: /hakkimizda
+Allow: /hizmetlerimiz
+Allow: /projelerimiz
+Allow: /ekibimiz
+Allow: /referanslar
+Allow: /bizeulasin
+
+# Yasal sayfalar
+Allow: /gizlilik-politikasi
+Allow: /kullanım-sartlari
+
+# Yönetim alanları - yasak
+Disallow: /admin
+Disallow: /api
+Disallow: /_next
+Disallow: /static
+
+# Sitemap
+Sitemap: https://enveproje.com/sitemap.xml

@@ -1,22 +1,17 @@
 import type { Metadata } from "next";
-import { Noto_Sans, Work_Sans } from "next/font/google";
+import { Work_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppPopup from "@/components/WhatsAppPopup";
-import StructuredData, { structuredData } from "@/components/StructuredData";
+import { structuredData } from "@/components/StructuredData";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
-
-const notoSans = Noto_Sans({
-  variable: "--font-noto-sans",
-  subsets: ["latin"],
-  weight: ["400", "500", "700", "900"],
-});
 
 const workSans = Work_Sans({
   variable: "--font-work-sans",
   subsets: ["latin"],
-  weight: ["400", "500", "700", "900"],
+  weight: ["400", "700"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -115,11 +110,10 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
       </head>
       <body
-        className={`${workSans.variable} ${notoSans.variable} antialiased`}
-        style={{ fontFamily: "var(--font-work-sans), var(--font-noto-sans), sans-serif" }}
+        className={`${workSans.variable} antialiased`}
+        style={{ fontFamily: "var(--font-work-sans), sans-serif" }}
       >
         <div className="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden">
           <GoogleAnalytics />
